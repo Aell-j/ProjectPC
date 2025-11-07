@@ -53,6 +53,7 @@ body {
     #020201,
     #000000
   );
+  overflow-y: scroll;
 }
 
 img {
@@ -88,6 +89,12 @@ h6 {
   --text-size-medium: 1.6rem;
 }
 
+.block_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .button {
   border-radius: 5rem;
   padding: 1rem 3rem;
@@ -133,12 +140,15 @@ h6 {
 .header_nav a {
   font-size: var(--text-size-medium);
   font-weight: 400;
+  font-size: 1.6rem;
+  font-weight: normal;
   line-height: 150%;
 }
 .header_button {
   margin-left: 55.3rem;
   background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
   font-size: var(--text-size-medium);
+  font-size: 1.6rem;
   font-weight: bold;
   line-height: 140%;
 }
@@ -167,6 +177,9 @@ h6 {
   font-size: var(--text-size-medium);
   opacity: 0.4;
   font-weight: 400;
+  font-size: 1.6rem;
+  opacity: 0.4;
+  font-weight: normal;
   line-height: 150%;
 }
 
@@ -199,6 +212,8 @@ h6 {
 .main_display_button {
   background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
   font-size: var(--text-size-medium);
+
+  font-size: 1.6rem;
   font-weight: bold;
   line-height: 140%;
 }
@@ -232,6 +247,9 @@ h6 {
 .work_description {
   font-size: var(--text-size-medium);
   font-weight: 400;
+
+  font-size: 1.6rem;
+  font-weight: normal;
   line-height: 150%;
 }
 
@@ -253,6 +271,8 @@ h6 {
 
 .process .process_img {
   transform: rotate(45deg);
+  max-width: 9rem;
+  margin-right: 4.5rem;
 }
 
 .process_header {
@@ -271,6 +291,8 @@ h6 {
   margin-bottom: 8.1rem;
   font-weight: 400;
   font-size: var(--text-size-medium);
+  font-weight: normal;
+  font-size: 1.6rem;
   line-height: 160%;
   opacity: 0.5;
 }
@@ -418,4 +440,79 @@ h6 {
 .contact_item img {
   width: 50%;
   height: 50%;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 10;
+  padding: 3rem 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+.modal_inner {
+  position: relative;
+  padding: 9rem 1rem;
+  width: 66.3rem;
+  background: #2c2c2c;
+  text-align: center;
+  border-radius: 2%;
+}
+
+.modal_header {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 140%;
+  margin-bottom: 1rem;
+}
+
+.modal_subheader {
+  font-size: 1.6rem;
+  line-height: 160%;
+  margin-bottom: 2.8rem;
+  opacity: 0.5;
+}
+
+.modal_elements {
+  width: 45.4rem;
+  margin: 0 auto 3.5rem auto;
+}
+
+.modal_item {
+  height: 4.4rem;
+}
+
+.modal_input {
+  width: 100%;
+  height: 100%;
+  padding-left: 2.5rem;
+  background-color: rgb(77, 77, 77);
+  border-radius: 5rem;
+  font-size: 1.4rem;
+  line-height: 160%;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.modal_inner :not(:nth-child(3)) {
+  margin-bottom: 1.8rem;
+}
+
+.modal_close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+}
+
+.noscroll {
+  overflow: hidden;
+  height: 100%;
 }
