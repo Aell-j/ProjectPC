@@ -503,15 +503,6 @@ h6 {
   margin-bottom: 1.8rem;
 }
 
-.modal_close {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  width: 4rem;
-  height: 4rem;
-  cursor: pointer;
-}
-
 .noscroll {
   overflow: hidden;
   height: 100%;
